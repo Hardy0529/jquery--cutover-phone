@@ -49,8 +49,10 @@ $(".button").click(function(){
   home_audio.play();
 });
 
+var rot = 0
 $(".turn").click(function(){
-  $(".phone").css("transform","rotate(360deg)");
+  rot+=1
+  $(".phone").css("transform","rotate( "+rot* 360+"deg)");
 });
 
 $(".wiggle").click(function(){
